@@ -1,5 +1,20 @@
 <h1>Modularbase codeigniter Adminlte admin panel with grocery crud, ion auth and many more </h1> 
 
+
+To run this project please follow below steps :   
+
+1. At first download the project   
+2. Then extract it in xampp/htdocs folder  
+3. Create database and import sql file from toot db directory  
+4. Change your ase url in config file  
+5. Configure database file  
+
+  Admin username and password   
+
+  username : admin@admin.com  
+  pass : admin123
+
+
 Output : 
 
 ![alt text](./screenshoot/login.png)
