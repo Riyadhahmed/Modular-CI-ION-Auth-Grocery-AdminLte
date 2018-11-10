@@ -1,0 +1,1 @@
+jQuery(function(a){"use strict";a(".gc-container").datagrid()});

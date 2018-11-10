@@ -1,0 +1,38 @@
+.table-label {
+  background: #DDD;
+  width: 100%;
+  padding: 5px;
+  text-align: left;
+}
+
+.minimize-maximize-container {
+  border: 1px solid #adadad;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.form-container {
+  padding: 10px;
+  border: 1px solid #DDD;
+}
+
+.read-row {
+  margin-top: 7px;
+}
+
+.report-div {
+  padding: 10px 15px 1px 15px;
+  margin: 0px 4px;
+  font-weight: bold;
+}
+
+/* Extra CSS for some plugins */
+.ui_tpicker_hour_label, .ui_tpicker_minute_label, .ui_tpicker_second_label {
+  font-size: 14px;
+}
+
+/* Select needs to have a minimum width in order to not
+   look broken when the plugin "chosen" is loaded */
+select.chosen-select {
+  min-width: 100px;
+}

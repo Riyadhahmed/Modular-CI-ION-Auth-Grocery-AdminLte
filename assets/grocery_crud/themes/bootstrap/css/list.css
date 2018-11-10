@@ -1,0 +1,190 @@
+.gc-container .clear-search {
+  position: absolute;
+  margin-left: -18px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.gc-container .clear-all-search {
+  cursor: pointer;
+  margin-left: -11px;
+  margin-top: 3px;
+  position: absolute;
+}
+.gc-container .clear-search:hover, .gc-container .clear-all-search:hover {
+  color: #555 !important;
+}
+.gc-container .searchable-input.value-not-empty {
+  border-color: #444;
+  border-style: dashed;
+}
+.gc-container .column-with-ordering > div {
+  float: left;
+}
+.gc-container .column-with-ordering > i {
+  float: right;
+}
+.gc-container .column-with-ordering {
+  cursor: pointer;
+}
+.gc-container .column-with-ordering:hover {
+  background: #EDEDED !important;
+  color: #000 !important;
+}
+.gc-container .column-with-ordering > div::selection {
+  background: transparent !important;
+}
+.gc-container .column-with-ordering > div::-moz-selection {
+  background: transparent !important;
+}
+.gc-container .only-mobiles {
+  display: none;
+}
+.gc-container .search-button {
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  width: 40px;
+  text-align: left;
+  outline: none !important;
+}
+.gc-container .search-button input.search-input {
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  width: 0px;
+  border: none !important;
+  background: transparent;
+}
+.gc-container .search-button input.search-input-big {
+  width: 140px;
+}
+.gc-container .search-button-big {
+  width: 180px;
+  background: white;
+}
+.gc-container .search-button-big:hover, .gc-container .search-button-big:focus, .gc-container .search-button-big:active {
+  background: white !important;
+}
+.gc-container .header-tools {
+  padding: 5px 5px 10px 5px;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+.gc-container .footer-tools {
+  padding: 5px 5px 10px 5px;
+  border: 1px solid #DDDDDD;
+  border-top: none;
+  margin-bottom: 20px;
+}
+.gc-container table.grocery-crud-table {
+  margin-bottom: 0px;
+}
+.gc-container span.page-number-input-container {
+  padding: 4px 10px !important;
+}
+.gc-container span.page-number-input-container .page-number-input {
+  height: 24px !important;
+  width: 50px !important;
+  padding: 2px 3px !important;
+}
+
+@media (max-width: 350px) {
+  table.grocery-crud-table tr th:nth-child(3),
+  table.grocery-crud-table tr td:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  table.grocery-crud-table th:nth-child(4),
+  table.grocery-crud-table th:nth-child(5),
+  table.grocery-crud-table th:nth-child(6),
+  table.grocery-crud-table th:nth-child(7),
+  table.grocery-crud-table th:nth-child(8),
+  table.grocery-crud-table td:nth-child(5),
+  table.grocery-crud-table td:nth-child(6),
+  table.grocery-crud-table td:nth-child(7),
+  table.grocery-crud-table td:nth-child(8),
+  table.grocery-crud-table td:nth-child(9),
+  table.grocery-crud-table td:nth-child(10) {
+    display: none;
+  }
+
+  table.grocery-crud-table td:nth-child(2) select,
+  table.grocery-crud-table td:nth-child(1) input[type="checkbox"],
+  .delete-selected {
+    display: none;
+  }
+
+  table.grocery-crud-table td:nth-child(1) {
+    padding: 0px;
+  }
+
+  table tbody tr td:nth-child(1) {
+    border-right: none !important;
+  }
+
+  .pagination .page-number {
+    display: none;
+  }
+
+  .only-desktops {
+    display: none;
+  }
+
+  .only-mobiles {
+    display: block !important;
+  }
+}
+@media (max-width: 560px) {
+  table.grocery-crud-table th:nth-child(4),
+  table.grocery-crud-table th:nth-child(5),
+  table.grocery-crud-table th:nth-child(6),
+  table.grocery-crud-table th:nth-child(7),
+  table.grocery-crud-table th:nth-child(8),
+  table.grocery-crud-table td:nth-child(5),
+  table.grocery-crud-table td:nth-child(6),
+  table.grocery-crud-table td:nth-child(7),
+  table.grocery-crud-table td:nth-child(8),
+  table.grocery-crud-table td:nth-child(9),
+  table.grocery-crud-table td:nth-child(10) {
+    display: none;
+  }
+
+  .pagination .page-number {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  table.grocery-crud-table th:nth-child(5),
+  table.grocery-crud-table th:nth-child(6),
+  table.grocery-crud-table th:nth-child(7),
+  table.grocery-crud-table th:nth-child(8),
+  table.grocery-crud-table td:nth-child(6),
+  table.grocery-crud-table td:nth-child(7),
+  table.grocery-crud-table td:nth-child(8),
+  table.grocery-crud-table td:nth-child(9),
+  table.grocery-crud-table td:nth-child(10) {
+    display: none;
+  }
+
+  .pagination .page-number {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  table.grocery-crud-table th:nth-child(6),
+  table.grocery-crud-table th:nth-child(7),
+  table.grocery-crud-table th:nth-child(8),
+  table.grocery-crud-table td:nth-child(7),
+  table.grocery-crud-table td:nth-child(8),
+  table.grocery-crud-table td:nth-child(9),
+  table.grocery-crud-table td:nth-child(10) {
+    display: none;
+  }
+
+  .pagination .page-number {
+    display: none;
+  }
+}

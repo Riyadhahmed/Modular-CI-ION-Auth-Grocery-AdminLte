@@ -1,0 +1,11 @@
+1.3.1
+    The edit is visible on mobiles even though we have enabled the unset_edit functionality
+    Updating libraries to the latest versions and removing all the libraries that the theme is not using anymore.
+    Fixing bug with full screen that didn't work at the 'View' operation.
+1.3.0
+    - #27: Remember the full screen button when it is pressed for the other pages
+    - Important CSS changes for compatibility with the most of the admin pages
+1.2.9
+    - Add the "Clear filtering" button at the bottom of the grid (button settings)
+1.2.8
+    - Add Caching of the search queries, paging number and ordering
