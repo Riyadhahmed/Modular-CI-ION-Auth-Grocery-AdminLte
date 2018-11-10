@@ -5,9 +5,10 @@ To run this project please follow below steps :
 
 1. At first download the project   
 2. Then extract it in xampp/htdocs folder  
-3. Create database and import sql file from toot db directory  
-4. Change your ase url in config file  
-5. Configure database file  
+3. You have to download ci frame work and copy system folder to this project  
+4. Create database and import sql file from toot db directory  
+5. Change your ase url in config file  
+6. Configure database file  
 
   Admin username and password   
 
