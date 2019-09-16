@@ -1,36 +1,41 @@
-<div class="login-wrap">
-	<div class="login-html">
-		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">
-			Sign In</label>
-		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
-		<div class="login-form">
-			<div class="sign-in-htm">
-				<?php
-				$attributes = array( "class" => "form-horizontal", "id" => "loginform", "name" => "loginform" );
-				echo form_open( "auth/login", $attributes );
-				?>
-				<div id="infoMessage"><?php echo $message;?></div>
-				<div class="group">
-					<input type="text" id="identity" name="identity" class="input" placeholder="Email"
-					       value="<?php echo set_value( 'identity' ); ?>"/>
-				</div>
-				<div class="group">
-					<input type="password" id="password" name="password" placeholder="Password"
-					       class="input" data-type="password"
-					       value="<?php echo set_value( 'password' ); ?>"/>
-				</div>
-				<div class="group">
-					<input id="check" type="checkbox" remember name="remember" class="check" checked>
-					<label for="check"><span class="icon"></span> Keep me Signed in</label>
-                    <a href="forgot_password" class="pull-right">Forgot Password ?</a>
-				</div>
-				<div class="group">
-					<input type="submit" name="submit" class="button" value="Sign In">
-				</div>
-				<div class="footer" style="color:#a5a5a5;text-transform: uppercase;"> &copy; <?php echo date( 'Y' ); ?> Chittagong Port Women College</div>
-				<?php echo form_close(); ?>
-			</div>
-		</div>
-	</div>
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <div class="login100-form-title"
+                 style="background-image: url('<?php echo base_url(); ?>assets/login/images/bg-01.jpg');">
+					<span class="login100-form-title-1">
+						Sign In
+					</span>
+            </div>
+           <?php
+           $attributes = array("class" => "login100-form validate-form");
+           echo form_open("auth/login", $attributes);
+           ?>
+            <span class="error"> <?php echo $message; ?> </span>
+            <div class="wrap-input100 validate-input m-b-26" data-validate="email is required">
+                <span class="label-input100">Identity</span>
+                <input class="input100" type="text" id="identity" name="identity" placeholder="Enter Username or Email"
+                       value="<?php echo set_value('identity'); ?>">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+                <span class="label-input100">Password</span>
+                <input class="input100" type="password" name="password" placeholder="Enter password">
+                <span class="focus-input100"></span>
+            </div>
+            <div class="container-login100-form-btn">
+                <input type="submit" name="submit" class="button login100-form-btn" value="Sign In">
+            </div>
+           <?php echo form_close(); ?>
+        </div>
+    </div>
 </div>
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/login_style.css">
+<style>
+    .error {
+        color: #fb5f5c;
+        font-size: 11px;
+        font-family: verdana;
+
+    }
+
+</style>

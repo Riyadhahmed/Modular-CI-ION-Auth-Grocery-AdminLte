@@ -24,15 +24,6 @@ if ( $single ) {
 			</div>
 			<div class="clearfix"></div>
 			<div class="form-group col-md-12">
-				<label for=""> Status </label><br/>
-				<input type="radio" name="status" class="flat-red" value="1" <?php if ( $value['active'] == '1' ) {
-					echo 'checked="checked"';
-				} ?>" /> Active
-				<input type="radio" name="status" class="flat-red" value="0" <?php if ( $value['active'] == '0' ) {
-					echo 'checked="checked"';
-				} ?>" /> In Active
-			</div>
-			<div class="form-group col-md-12">
 				<input type="submit" id="submit" name="submit" value="Save" class="btn btn-primary">
 				<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
 				<small><img id="loader" src="<?php echo site_url( 'assets/images/loadingg.gif' ); ?>"/></small>

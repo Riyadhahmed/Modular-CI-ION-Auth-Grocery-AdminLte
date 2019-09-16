@@ -14,7 +14,7 @@ class User extends Admin_Base_Controller
         $group = 'admin';
         if (!$this->ion_auth->in_group($group)) {
             $this->session->set_flashdata('message', 'You must be an administrator to view the users page.');
-            redirect('admin/admin_dashboard/access_denied');
+            redirect('admin/dashboard/access_denied');
         }
     }
 
@@ -30,11 +30,11 @@ class User extends Admin_Base_Controller
     {
         $this->setOutputMode(NORMAL);
         if ($this->input->is_ajax_request()) {
-            $this->data['all'] = $this->user_model->get_all();
+            $this->data['all'] = $this->user_model->get_all_users();
             $view = $this->load->view('admin/user/all', $this->data, true);
             $this->output->set_output($view);
         } else {
-            redirect('admin/admin_dashboard');
+            redirect('admin/dashboard');
         }
     }
 
@@ -50,7 +50,7 @@ class User extends Admin_Base_Controller
             $view = $this->load->view('admin/user/add', $this->data, true);
             $this->output->set_output($view);
         } else {
-            redirect('admin/admin_dashboard');
+            redirect('admin/dashboard');
         }
     }
 
@@ -166,10 +166,10 @@ class User extends Admin_Base_Controller
                     }
                 }
             } else {
-                redirect('admin/admin_dashboard');
+                redirect('admin/dashboard');
             }
         } else {
-            redirect('admin/admin_dashboard');
+            redirect('admin/dashboard');
         }
     }
 
@@ -212,7 +212,7 @@ class User extends Admin_Base_Controller
             $single_user_details_view = $this->load->view('admin/user/v_user_details', $this->data, true);
             $this->output->set_output($single_user_details_view);
         } else {
-            redirect('admin/admin_dashboard');
+            redirect('admin/dashboard');
         }
     }
 
@@ -231,7 +231,7 @@ class User extends Admin_Base_Controller
             $view = $this->load->view('admin/user/edit', $this->data, true);
             $this->output->set_output($view);
         } else {
-            redirect('admin/admin_dashboard');
+            redirect('admin/dashboard');
         }
     }
 
@@ -343,10 +343,10 @@ class User extends Admin_Base_Controller
                     }
                 }
             } else {
-                redirect('admin/admin_dashboard');
+                redirect('admin/dashboard');
             }
         } else {
-            redirect('admin/admin_dashboard');
+            redirect('admin/dashboard');
         }
     }
 
@@ -361,7 +361,7 @@ class User extends Admin_Base_Controller
             $view = $this->load->view('admin/user/add', $this->data, true);
             $this->output->set_output($view);
         } else {
-            redirect('admin/admin_dashboard');
+            redirect('admin/dashboard');
         }
     }
 

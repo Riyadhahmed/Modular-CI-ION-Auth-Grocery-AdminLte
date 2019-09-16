@@ -143,16 +143,6 @@
         }
 
 
-        // change password form
-        public function change_passwordw()
-        {
-            $data['title'] = 'Change Password';
-            $data['breadcrumbs'] = 'Change Password';
-            $id = $this->ion_auth->get_user_id();
-            $data['user'] = $this->ion_auth->user($id)->row();
-            $this->load->view('admin/edit_profile', $data);
-        }
-
         // change password
         public function change_password()
         {

@@ -18,6 +18,7 @@
 								<th> Photo</th>
 								<th> Name</th>
 								<th> Email</th>
+								<th> Group</th>
 								<th> Status</th>
 								<th> Action</th>
 							</tr>
@@ -29,6 +30,7 @@
 								<th> Photo</th>
 								<th> Name</th>
 								<th> Email</th>
+                                <th> Group</th>
 								<th> Status</th>
 								<th> Action</th>
 							</tr>

@@ -18,6 +18,7 @@ if ( $all ) {
 		$row[] = "<td>" . $image . "</td>";
 		$row[] = "<td>" . $value['username'] . "</td>";
 		$row[] = "<td>" . $value['email'] . "</td>";
+		$row[] = "<td>" . $value['group_name'] . "</td>";
 		$row[] = "<td>" . $status . "</td>";
         $row[] = "<td style='text-align:center;'><a data-toggle='tooltip' class='btn btn-primary btn-xs edit'  id='" . $id . "' title='Edit'> <i class='fa fa-pencil-square-o'></i> </a>
 				  <a data-toggle='tooltip' class='btn btn-danger btn-xs  delete'  id='" . $id . "' title='Delete'> <i class='fa fa-trash-o'></i> </a></td></tr>";
